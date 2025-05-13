@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+
+
+:root{
+  --nav-width: 300px;
+  --content-width: calc(100% - var(--nav-width));
+  --primary-color: #cc3030;
+  --primary-color-2: #FF9F00;
+  --text-dull-color: #d3d3d3;
+}
+
+body{
+  background-color:rgba(223, 214, 214, 0.253) ;
+  overflow: hidden;
+}

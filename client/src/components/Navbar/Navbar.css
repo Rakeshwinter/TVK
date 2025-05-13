@@ -1,0 +1,57 @@
+nav {
+  max-width: 400px;
+  background-color: var(--primary-color);
+  height: 100vh;
+  box-shadow: 12px 0 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  color: white;
+    transition: all 0.3s ease;
+}
+
+.logo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.644);
+  height: 50px;
+  padding: 40px 20px;
+}
+
+.logo-flex h5 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.nav-flex h5 {
+  color: rgb(221, 221, 221);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 10px;
+}
+.closebtn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.closebtn svg {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s;
+  stroke: white;
+}
+
+.closebtn:hover svg {
+  transform: scale(1); /* or any accent color you like */
+  cursor: pointer;
+}
+
+.closebtn:hover svg {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.close {
+  left: -500px;
+}

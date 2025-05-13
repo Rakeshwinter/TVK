@@ -1,0 +1,42 @@
+:root{
+    --header-height: 60px;
+}
+
+.header{
+    width:100%;
+    box-shadow: 5px 5px 5px rgba(53, 53, 53, 0.2);
+    text-align: center;
+    background-color: white;
+    color:#FF2C2C;
+    height: var(--header-height);
+}
+
+.header h2{
+    padding: 0;
+    margin: 0;
+}
+.header-icon{
+    position: absolute;
+    right: 10px ;
+    height: var(--header-height);
+    color: #FF2C2C;
+    margin: 0 10px;
+}
+
+.header-menu{
+    position: absolute;
+    left: 10px ;
+    height: var(--header-height);
+    margin: 0 10px;
+}
+
+.header-menu:hover , .header-icon:hover{
+    cursor: pointer;
+    color: #ffad29;
+}
+.header-menu svg , .header-icon svg{
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.2s;
+}
+.header-menu:hover svg, .header-icon:hover svg{
+    transform: scale(1.2); 
+}

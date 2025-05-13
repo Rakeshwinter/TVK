@@ -1,0 +1,195 @@
+.title-container {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 0 0;
+}
+.title-float {
+  width: 1000px;
+  overflow: visible;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow:visible;
+}
+.title-container button {
+  width: 150px;
+  height: 40px;
+  background-color: #ff2c2c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(255, 44, 44, 0.08);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.title-container button .add-icon {
+  margin-left: 10px;
+}
+.title-container button svg {
+  transition: transform 0.2s, stroke 0.2s;
+  stroke: white;
+}
+.title-container button:hover {
+  background-color: white;
+  color: #ff2c2c;
+  box-shadow: 0 4px 16px rgba(255, 44, 44, 0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+.title-container button:hover svg {
+  transform: scale(1) rotate(360deg);
+  stroke: #ff2c2c;
+}
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 1.1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 600px; /* or your preferred min width */
+  max-width: 1600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-radius: 10px;
+  width: auto; /* Not full width by default */
+  overflow: visible; /* Add this if not present */
+}
+
+.styled-table thead tr {
+  background-color: #ff2c2c;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 14px 18px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  transition: background 0.2s;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f7ff;
+}
+
+.status-active {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.status-inactive {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Dropdown cell styles */
+.dropdown-cell {
+  position: relative;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* More button styles */
+.more-btn {
+  background: #ff2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.more-btn:hover,
+.more-btn:focus {
+  background: #fff;
+  color: #ff2c2c;
+  outline: none;
+  border: 1px solid #ff2c2c;
+}
+
+/* Dropdown menu styles */
+.custom-dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dropdown-cell.open .custom-dropdown-menu {
+  display: block;
+}
+
+.custom-dropdown-menu li {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.custom-dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.custom-dropdown-menu button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #333;
+  padding: 12px 18px;
+  text-align: left;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.custom-dropdown-menu button:hover {
+  background: #ff2c2c;
+  color: #fff;
+}
+
+/* Only on small screens, make table full width and allow scroll */
+@media (max-width: 1000px) {
+  .styled-table {
+    width: 100%;
+    min-width: 600px; /* Keeps columns readable, enables scroll */
+  }
+  .table-responsive {
+    overflow-x: auto;
+  }
+  .styled-table th,
+  .styled-table td {
+    white-space: nowrap;
+  }
+  .title-float-1 {
+    width: 100%;
+  }
+  .title-container {
+    padding: 0 20px;
+  }
+}
+
+/* Responsive: keep dropdown inside table */
+@media (max-width: 600px) {
+  .custom-dropdown-menu {
+    left: 0;
+    right: auto;
+    min-width: 120px;
+    font-size: 0.95em;
+  }
+}
